@@ -1,0 +1,34 @@
+schema_version = "1.1"
+
+[task]
+name = "bespoke/release_image_repair"
+description = "Repair a broken CI release build for a containerized Python API so the expected image artifact is produced and passes smoke validation."
+authors = []
+keywords = ["devops", "docker", "ci", "fastapi", "debugging"]
+
+[metadata]
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+allow_internet = true
+mcp_servers = []
+
+[environment.runtime]
+python = "3.12"
+
+[verifier.env]
+
+[environment.env]
+
+[solution.env]
+

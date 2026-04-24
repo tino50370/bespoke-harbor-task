@@ -1,0 +1,4 @@
+SERVICE_NAME = "release-api"
+STATUS_VALUE = "ok"
+VERSION = "1.0.0"
+PORT = 8080
